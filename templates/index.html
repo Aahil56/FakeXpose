@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FakeXpose - Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FakeXpose</h1>
+        <p>Enter a news article below to check its authenticity.</p>
+        <form action="{{ url_for('predict') }}" method="post">
+            <textarea name="news" rows="10" cols="50" placeholder="Enter news text here..." required></textarea>
+            <br>
+            <input type="submit" value="Analyze News">
+        </form>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FakeXpose - Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        
+        <div class="news-text">
+            <h3>Analyzed Text:</h3>
+            <p>{{ news_text }}</p>
+        </div>
+
+        <div class="results">
+            <h3>ML Model Predictions:</h3>
+            {% for model, prediction in predictions.items() %}
+            <div class="prediction">
+                <strong>{{ model }}:</strong> 
+                <span class="{% if 'Fake News' in prediction %}fake{% else %}real{% endif %}">
+                    {{ prediction }}
+                </span>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="gemini-analysis">
+            <h3>Final Report:</h3>
+            <pre>{{ gemini_analysis }}</pre>
+        </div>
+
+        <a href="{{ url_for('home') }}" class="back-button">Check Another News</a>
+    </div>
+</body>
+</html> 
