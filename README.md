@@ -1,14 +1,7 @@
-# FakeXpose
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+# FakeXpose Version 1
 
 ## Introduction
-FakeXpose is a tool designed to detect and expose fake news. It uses advanced machine learning algorithms to analyze news articles and determine their credibility.
+FakeXpose is a tool designed to detect and expose fake news. It uses traditional machine learning algorithms to analyze news articles and determine their credibility.
 
 ## Features
 - Detects fake news with high accuracy
@@ -20,7 +13,7 @@ FakeXpose is a tool designed to detect and expose fake news. It uses advanced ma
 To install FakeXpose, follow these steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/FakeXpose.git
+    git clone https://github.com/Aahil56/FakeXpose.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -30,12 +23,32 @@ To install FakeXpose, follow these steps:
     ```bash
     pip install -r requirements.txt
     ```
+    4. Create a virtual environment:
+        ```bash
+        python -m venv venv
+        ```
 
-## Usage
-To use FakeXpose, run the following command:
-```bash
-python fakexpose.py
-```
+    5. Activate the virtual environment:
+        - On Windows:
+            ```bash
+            venv\Scripts\activate
+            ```
+        - On macOS and Linux:
+            ```bash
+            source venv/bin/activate
+            ```
+
+    6. Install the required dependencies:
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+    ## Running the Application
+    To run the application, use the following command:
+    ```bash
+    python app.py
+    ```
+
 Follow the on-screen instructions to analyze a news article.
 
 ## Screenshots
