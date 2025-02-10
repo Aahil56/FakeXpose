@@ -52,7 +52,7 @@ To install FakeXpose, follow these steps:
 Follow the on-screen instructions to analyze a news article.
 
 ## Screenshots
-Here are some screenshots of FakeXpose in action:
+Here are some screenshots of FakeXpose in action:-
 
 ### Main Interface
 ![Main Interface](images/interface.jpg)
